@@ -14,11 +14,10 @@ import java.util.ArrayList;
  */
 
 public class ReportCardAdapter extends ArrayAdapter<ReportCard> {
-
     public ReportCardAdapter(Context context, ArrayList<ReportCard> reportCards) {
         super(context, 0, reportCards);
     }
-
+    @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View itemView = convertView;
         if (itemView == null) {

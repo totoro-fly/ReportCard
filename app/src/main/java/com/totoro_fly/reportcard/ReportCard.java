@@ -29,7 +29,8 @@ public class ReportCard {
         this.mSore = score;
     }
 
+    @Override
     public String toString() {
-        return mSubject + " " + mSore;
+        return "ReportCard: Subject:"+ mSubject + ",Score" + mSore;
     }
 }
