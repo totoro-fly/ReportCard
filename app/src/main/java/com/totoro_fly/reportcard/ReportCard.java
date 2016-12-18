@@ -5,27 +5,31 @@ package com.totoro_fly.reportcard;
  */
 
 public class ReportCard {
-    private String subject;
-    private String score;
+    private String mSubject;
+    private String mSore;
 
     public ReportCard(String subject, String score) {
-        this.subject = subject;
-        this.score = score;
+        this.mSubject = subject;
+        this.mSore = score;
     }
 
     public String getSubject() {
-        return subject;
+        return mSubject;
     }
 
     public void setSubject(String subject) {
-        this.subject = subject;
+        this.mSubject = subject;
     }
 
     public String getScore() {
-        return score;
+        return mSore;
     }
 
     public void setScore(String score) {
-        this.score = score;
+        this.mSore = score;
+    }
+
+    public String toString() {
+        return mSubject + " " + mSore;
     }
 }
